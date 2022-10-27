@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Job, Subdivision, Employee
 
-# Register your models here.
+admin.site.register(Job)
+admin.site.register(Subdivision)
+admin.site.register(Employee)
