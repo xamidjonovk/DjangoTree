@@ -10,7 +10,7 @@ class EmployeeSerializer(ModelSerializer):
     def get_text(self, obj):
         if obj:
             id = obj[0].subdivision_id
-            return f"""<a href="employees/{id}">employees</a>"""
+            return f"""<a href="employees/{id}" style="color:black">Employees >> </a>"""
 
     class Meta:
         model = Employee

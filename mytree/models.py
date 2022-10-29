@@ -13,6 +13,7 @@ class Job(AbstractLayer):
 
 
 class Subdivision(AbstractLayer):
+    """Divisions of Company"""
     title = models.CharField(max_length=200)
     parent = models.ForeignKey("self", on_delete=models.CASCADE, default=None, null=True, blank=True, related_name='nodes')
 
