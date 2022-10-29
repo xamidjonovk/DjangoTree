@@ -12,3 +12,4 @@ Tree Structure in Django
 
 ### I used Soft UI Dashboard for Admin panel 
 
+![image](https://user-images.githubusercontent.com/77206354/198841120-72522da3-aebf-4bae-b70f-f314421963c1.png)
