@@ -9,15 +9,17 @@
 
 
         </tr>
+
         {% for subdiv in object_list %}
 
         <tr>
             <td>{{subdiv.id}}</td>
-            <td><a href="{{subdiv.id}}">{{subdiv.title}}</a></td>
+            <td><a href="{% url 'div-list' subdiv.id %}">{{subdiv.title}}</a></td>
 
 
         </tr>
-
+        {% empty %}
+            <meta http-equiv="REFRESH" content="0;url={% url 'emp-list' subdivision %}">
         {% endfor %}
     </table>
 </div>

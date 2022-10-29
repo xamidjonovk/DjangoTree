@@ -14,7 +14,7 @@ class Job(AbstractLayer):
 
 class Subdivision(AbstractLayer):
     title = models.CharField(max_length=200)
-    parent = models.ForeignKey("self", on_delete=models.CASCADE, default=None, null=True, blank=True)
+    parent = models.ForeignKey("self", on_delete=models.CASCADE, default=None, null=True, blank=True, related_name='nodes')
 
     def __str__(self):
         return self.title
